@@ -1,0 +1,61 @@
+/*
+Theme Name: Wex
+Theme URI: https://ted-lijunyu.top/wex.html
+Author: LJTStudio
+Author URI: https://ted-lijunyu.top/LJTStudio
+Description: Wex is a personal application (work) display theme developed by LJTStudio, inspired by the WordPress theme Twenty Twenty Five.
+Requires at least: 6.7
+Tested up to: 6.8
+Requires PHP: 7.2
+Version: 1.2
+License: Massachusetts Institute of Technology License
+License URI: https://opensource.org/license/mit
+Text Domain: LJT
+Tags: works
+*/
+
+/*
+ * Link styles
+ * https://github.com/WordPress/gutenberg/issues/42319
+ */
+a {
+	text-decoration-thickness: 1px !important;
+	text-underline-offset: .1em;
+}
+
+/* Focus styles */
+:where(.wp-site-blocks *:focus) {
+	outline-width: 2px;
+	outline-style: solid;
+}
+
+/* Increase the bottom margin on submenus, so that the outline is visible. */
+.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child) {
+	margin-bottom: 3px;
+}
+
+/* Increase the outline offset on the parent menu items, so that the outline does not touch the text. */
+.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content {
+	outline-offset: 4px;
+}
+
+/* Remove outline offset from the submenus, otherwise the outline is visible outside the submenu container. */
+.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+	outline-offset: 0;
+}
+
+/*
+ * Progressive enhancement to reduce widows and orphans
+ * https://github.com/WordPress/gutenberg/issues/55190
+ */
+h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
+	text-wrap: pretty;
+}
+
+/*
+ * Change the position of the more block on the front, by making it a block level element.
+ * https://github.com/WordPress/gutenberg/issues/65934
+*/
+.more-link {
+	display: block;
+}

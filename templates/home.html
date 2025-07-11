@@ -1,11 +1,13 @@
 <!-- wp:heading {"textAlign":"center","level":1,"lock":{"move":true,"remove":true},"className":"is-style-default","fontSize":"xx-large"} -->
-<h1 class="wp-block-heading has-text-align-center is-style-default has-xx-large-font-size"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-contrast-color">xxx应用简介</mark></h1>
+<h1 class="wp-block-heading has-text-align-center is-style-default has-xx-large-font-size"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-contrast-color">应用简介</mark></h1>
 <!-- /wp:heading -->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)"><!-- wp:image {"id":28,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://tedlijunyu.rf.gd/wp-content/uploads/2025/06/LJTStudio_head.jpeg" alt="" class="wp-image-28"/></figure>
-<!-- /wp:image -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)"><!-- wp:cover {"url":"https://tedlijunyu.rf.gd/wp-content/uploads/2025/07/cb38bc6c4e2866addd6076329d990b6.jpg","id":55,"dimRatio":50,"customOverlayColor":"#8ddef3","isUserOverlayColor":false,"isDark":false,"sizeSlug":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover is-light"><img class="wp-block-cover__image-background wp-image-55 size-full" alt="" src="https://tedlijunyu.rf.gd/wp-content/uploads/2025/07/cb38bc6c4e2866addd6076329d990b6.jpg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#8ddef3"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"撰寫標題...","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"><strong>应用名称</strong></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
 
 <!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"align":"full","layout":{"type":"default"}} -->
 <div class="wp-block-query alignfull"><!-- wp:post-template {"align":"full","layout":{"type":"default"}} -->
@@ -22,6 +24,20 @@
 <p>自定义：<br>xxxxxxxxx</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:gallery {"linkTo":"none","layout":{"type":"flex","flexWrap":null}} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"align":"left"} -->
+<figure class="wp-block-image alignleft"><img alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img alt=""/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img alt=""/></figure>
+<!-- /wp:image -->
+
 <!-- wp:buttons {"layout":{"type":"flex","verticalAlignment":"top","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://tedlijunyu.rf.gd/test.zip">下载最新版本</a></div>
@@ -33,7 +49,19 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 <!-- /wp:post-template --></div>
-<!-- /wp:query --></main>
-<!-- /wp:group -->
+<!-- /wp:query -->
 
-<!-- wp:template-part {"slug":"footer"} /-->
+<!-- wp:group {"metadata":{"categories":["footer"],"patternName":"twentytwentyfive/footer-columns","name":"Footer with columns"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
+<div class="wp-block-group alignfull"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:site-title {"level":2,"fontSize":"xx-large"} /-->
+
+<!-- wp:html -->
+Theme <a href="https://github.com/ted-li-git/wordpress-theme-wex">Wex</a>
+<!-- /wp:html --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->

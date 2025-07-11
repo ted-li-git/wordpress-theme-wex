@@ -137,6 +137,32 @@ if ( ! function_exists( 'twentytwentyfive_register_block_bindings' ) ) :
 		);
 	}
 endif;
+require_once get_template_directory() . '/includes/class-tgm-plugin-activation.php';
+
+add_action('tgmpa_register', 'my_theme_register_required_plugins');
+
+function my_theme_register_required_plugins() {
+    $plugins = array(
+        array(
+            'name'      => 'TablePress',
+            'slug'      => 'tablepress',
+            'required'  => true, // 必须安装
+        ),
+    );
+
+    $config = array(
+        'id'           => 'your-theme-tgmpa',
+        'default_path' => '',
+        'menu'         => 'tgmpa-install-plugins',
+        'parent_slug'  => 'themes.php',
+        'capability'   => 'edit_theme_options',
+        'has_notices'  => true,
+        'dismissable'  => false,
+        'is_automatic' => true, // 安装后自动激活
+    );
+
+    tgmpa($plugins, $config);
+}
 add_action( 'init', 'twentytwentyfive_register_block_bindings' );
 
 // Registers block binding callback function for the post format name.

@@ -79,7 +79,7 @@ If you have any questions or suggestions, feel free to contact me:
 
 ## 🙏 Credits
 
-- [WordPress](https://cn.wordpress.org)
+- [WordPress](https://wordpress.org)
 
 ---
 
